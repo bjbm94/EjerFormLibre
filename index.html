@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Formulario de contacto</title>
+<meta charset="utf-8">
+<style>
+
+    input {border-width: 1ch;
+    }
+    textarea {border-width: 1ch;
+    }
+    
+</style>
+</head>
+<body>
+  <h1>formulario de contacto</h1>
+
+  <form action="bjbm@hotmail.com" method="post">
+
+    <label for="Nombre"></label>
+    Nombre: <input type="text" id="Nombre" name="Nombre" placeholder="Tu nombre" maxlength="50"><br><br>
+
+    <label for="Apellidos"></label>
+    Apellidos: <input type="text" id="Apellidos" name="Apellidos" placeholder="Tus apellidos" maxlength="50"><br><br>
+
+    <label for="Teléfono"></label>
+    Teléfono: <input type="text" id="Teléfono" name="Teléfono" placeholder="Tu nº de Teléfono*" pattern="[6,9]{1}[0-9]{8}" size="18" required><br><br>
+
+    <label for="Correo"></label>
+    Correo: <input type="text" id="Correo" name="Correo" placeholder="Tu E-mail*" required><br><br>
+    
+    <label for="Asunto"></label>
+    Asunto: <input type="text" id="Asunto" name="Asunto" placeholder="Asunto del mensaje"><br><br>
+
+    <label for="Mensaje"></label>
+    Mensaje: <textarea id="Mensaje" name="Mensaje" rows="9" cols="60" placeholder="Tu mensaje*" required></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+
+  </form>
+  <p>(Los campos con * son obligatorios.)</p>
+</body>
+</html>
